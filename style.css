@@ -1,0 +1,151 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 40px 20px;
+    font-family: Arial, sans-serif;
+    background: #f1f8f3;
+    color: #26382a;
+    text-align: center;
+    animation: fadeIn 0.8s ease;
+}
+
+h1 {
+    margin-bottom: 15px;
+    font-size: 32px;
+    animation: slideDown 0.8s ease;
+}
+
+p {
+    font-size: 17px;
+    margin-bottom: 30px;
+}
+
+/* Form Box */
+form {
+    width: 500px;
+    max-width: 95%;
+    margin: 25px auto;
+    padding: 30px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.12);
+    text-align: left;
+    animation: slideUp 0.8s ease;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 7px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 11px;
+    margin-bottom: 15px;
+    border: 1px solid #c8d8cc;
+    border-radius: 8px;
+    font-size: 15px;
+    outline: none;
+    transition: 0.3s;
+}
+
+input:focus,
+textarea:focus {
+    border-color: #4caf50;
+    box-shadow: 0 0 8px rgba(76, 175, 80, 0.25);
+}
+
+/* Buttons */
+input[type="submit"],
+button {
+    border: none;
+    padding: 12px 22px;
+    border-radius: 8px;
+    background: #4caf50;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+input[type="submit"]:hover,
+button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.18);
+}
+
+/* Links */
+a {
+    text-decoration: none;
+}
+
+/* Feedback Table */
+table {
+    width: 95%;
+    margin: 30px auto;
+    border-collapse: collapse;
+    background: white;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.10);
+    animation: slideUp 0.8s ease;
+}
+
+th {
+    padding: 13px;
+    background: #4caf50;
+    color: white;
+}
+
+td {
+    padding: 12px;
+    border: 1px solid #ddd;
+}
+
+tr {
+    transition: 0.3s;
+}
+
+tr:hover {
+    background: #eef8ef;
+    transform: scale(1.005);
+}
+
+/* Animations */
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-25px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
